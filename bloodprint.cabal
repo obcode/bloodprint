@@ -1,0 +1,21 @@
+name:                bloodprint
+version:             0.1.0.0
+synopsis:            Print blood pressure charts
+license:             BSD3
+license-file:        LICENSE
+author:              Oliver Braun
+maintainer:          ob@obraun.net
+category:            Misc
+build-type:          Simple
+cabal-version:       >=1.8
+
+executable bloodprint
+  hs-source-dirs:    src
+  main-is:           BloodPrint.hs
+  build-depends:     base ==4.5.*,
+                     bytestring,
+                     cassava
+
+source-repository head
+  type:     git
+  location: https://github.com/obcode/bloodprint
